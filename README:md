@@ -1,4 +1,0 @@
-Run particle:
-
-g++ particle.cc -o play -I /usr/local/include/SDL2 -L /usr/local/lib/ -l SDL2
-./play

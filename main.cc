@@ -30,9 +30,9 @@ int main()
         // screen.clear(); //NO need because we are gona blur
         swarm.update(elapsed); // not the best efficient way to do it. better if implement the update code inside the for() loop
         //Change color
-        unsigned char red = (unsigned char)((1 + sin(elapsed * 0.000041)) / 2.0 * 215 + 40);
-        unsigned char green = (unsigned char)((1 + sin(elapsed * 0.000021)) / 2.0 * 200);
-        unsigned char blue = (unsigned char)((1 + sin(elapsed * 0.000037)) / 2.0 * 215 + 40);
+        unsigned char red = (unsigned char)((1 + sin(elapsed * 0.00041)) / 2.0 * 215 + 40);
+        unsigned char green = (unsigned char)((1 + sin(elapsed * 0.00021)) / 2.0 * 200);
+        unsigned char blue = (unsigned char)((1 + sin(elapsed * 0.00037)) / 2.0 * 215 + 40);
 
         const particle *const pParticles = swarm.getParticle();
         for (int i = 0; i < swarm::NPARTICLES; i++)

@@ -48,14 +48,14 @@ namespace jbm
         double yspeed = m_speed * sin(m_direction);
         m_x += xspeed * interval; //this way the speed doesnt depend on the speed of the while loop .
         m_y += yspeed * interval;
-        /* if (m_x <= -1.0 || m_x >= 1.0 || m_y <= -1.0 || m_y >= 1.0) //if the particle go out of screen
+        if (m_x <= -1.0 || m_x >= 1.0 || m_y <= -1.0 || m_y >= 1.0) //if the particle go out of screen
         {
             init();
         }
         if (rand() < RAND_MAX / 200)
         {
             init();
-        }*/
+        }
     }
     particle::~particle()
     {

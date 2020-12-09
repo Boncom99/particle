@@ -41,7 +41,7 @@ namespace jbm
             return false;
         }
         //create window
-        m_window = SDL_CreateWindow("COOL EFFECT", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
+        m_window = SDL_CreateWindow("particle simulation", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
         if (m_window == NULL)
         {
             SDL_Quit();
